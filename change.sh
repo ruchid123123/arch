@@ -10,8 +10,6 @@ Server = http://mirrors.aliyun.com/archlinux/\$repo/os/\$arch
 Server = https://mirrors.ustc.edu.cn/archlinux/\$repo/os/\$arch
 EOF
 
-# 使用 reflector 命令进行镜像源更新
-sudo reflector --verbose --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
 
 # 更新 pacman 数据库并升级系统
 sudo pacman -Syyu
