@@ -1,0 +1,3 @@
+使用
+sudo pacman -S archlinux-keyring
+来更新密钥，然后再更新即可。
